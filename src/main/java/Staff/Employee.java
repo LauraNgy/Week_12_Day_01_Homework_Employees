@@ -25,10 +25,18 @@ public abstract class Employee {
     }
 
     public void raiseSalary(double raise) {
-        this.salary += raise;
+        if (raise > 0 ) {
+            this.salary += raise;
+        }
     }
 
     public double payBonus() {
         return this.salary/100;
+    }
+
+    public void setName(String name) {
+        if (name != "") {
+            this.name = name;
+        }
     }
 }
