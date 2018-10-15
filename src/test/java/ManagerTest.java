@@ -7,7 +7,7 @@ import static org.junit.Assert.assertEquals;
 
 public class ManagerTest {
 
-    Employee employee;
+    private Employee employee;
 
     @Before
     public void before() {
